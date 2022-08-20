@@ -34,4 +34,10 @@ public class Elephant {
     public void setRetiredFrom(String retiredFrom) {
         this.retiredFrom = retiredFrom;
     }
+
+    @Override
+    public String toString() {
+        return String
+                .format("%s %d - %s",this.getName(), this.getAge(), this.getRetiredFrom());
+    }
 }
